@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <title>Immers - Case Study</title>
+        <style>
+            
+            @import url('https://fonts.googleapis.com/css?family=Space+Grotesk&display=swap');
+            
+            *{
+                padding: 0%;
+                margin: 0%;
+                }
+            
+            body{
+                box-sizing: border-box;
+                width: 94vw;
+                padding: 0%;
+                margin: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fcfcfc; 
+            }
+            
+            header{
+                box-sizing: border-box;
+                width: 110%;
+                height: 85vh;
+                margin: 0%;
+                padding: 0%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: bottom;
+            }
+
+
+            nav{
+                box-sizing:border-box;
+                height: 10%;
+                width: 100vw;
+                position: fixed;
+                left: 0px;
+                margin: 0%;
+                padding: 0% 10% 0% 9.5%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                z-index: 4;
+                box-shadow: 1px 1px #fbfbfb;
+            }
+
+            #logo{
+                box-sizing: border-box;
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                text-align: center;
+                z-index: 50;
+            }
+
+
+            #logo:hover{
+                color: #444444;
+                cursor: pointer;
+            }
+
+            #logo a{
+                text-decoration: none;
+                color: #222222;
+            }
+
+            #link_item{
+                box-sizing: border-box;
+                width: auto;
+                height: 40px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                display: flex;
+                gap: 32px;
+                justify-content: flex-start;
+                text-align: center;
+                align-items: center;   
+            }
+            
+            #social_item{
+                box-sizing: border-box;
+                width: auto;
+                height: auto;
+                display: flex;
+                gap: 32px;
+                align-items:center;
+            }
+
+            #hamburger{
+                display: none;
+                align-self: center;
+            }
+
+            #dropdown_items{
+                display: none;
+            }
+
+            hr{
+                color: none;
+            }
+           
+            .social_links{
+                display:flex;
+                padding: 0%;
+                margin: 0%;
+                transition: transform 0.3s;
+                text-align: center;
+                align-items:center;
+            }
+
+            .nav_links{
+                padding-bottom: 8px;
+                padding-top: 8px;
+                text-decoration: none;
+                color: #222222;
+
+            }
+            
+            .social_links:hover{
+                transform: scale(1.2);
+            }
+
+            .nav_links:hover{
+                border-bottom: 1px solid #444444;
+                color: #444444;
+                cursor: pointer;
+            }
+
+            #hero{
+                box-sizing: border-box;
+                width: 92.5%;
+                height: 90%;
+                position: relative;
+                top: 15%;
+                left: 6.25%;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: flex-end;
+                justify-content: center;
+                padding: 0%;
+                margin: 0%;
+                gap: 5%;
+            }
+
+            #hero img{
+                height: 90%;
+                width: auto;
+            }
+            
+            #hero_text{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 5% 10% 5% 10%;
+                gap: 5%;
+                padding: 1%;
+            }
+
+            #hero_text2{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 5% 10% 0% 10%;
+                gap: 5%;
+                padding: 1%;
+            }
+
+            #title_section{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items:left;
+                margin: 0%;
+                gap: 5%;
+                padding: 5% 0% 0% 2.5%;
+            }
+
+            #title_section3{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items:left;
+                margin: 0%;
+                gap: 5%;
+                padding: 5% 0% 0% 10%;
+            }
+            
+            #title_section h2, #title_section3 h2{
+                box-sizing: border-box;
+                align-items:left;
+                text-align: left;
+            }
+
+            #title_section p, #title_section3 p{
+                box-sizing: border-box;
+                align-self:left;
+                text-align: left;
+                padding: 0%;
+                margin-bottom: 3.75%;
+                
+            }
+
+            #title_section2{
+                box-sizing: border-box;
+                width: 100vw;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items:center;
+                text-align: center;
+                margin: 0%;
+                gap: 5%;
+                padding: 5% 0% 0% 0%;
+            }
+            
+            #title_section2 h2{
+                box-sizing: border-box;
+                width: 90vw;
+                align-items:center;
+                text-align: center;
+            }
+
+            #title_section2 p{
+                box-sizing: border-box;
+                width: 90vw;
+                align-self: center;
+                text-align: center;
+            }
+
+            h1{              
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 52px;
+                color: #222222;
+                padding: 0% 15% 2.5% 15%;
+                margin: 0%;
+            }                   
+
+            h2{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:48px;
+                font-weight: 400;
+                color: #222222;
+                padding: 0% 0% 2% 0%;
+                margin: 0%;
+                align-items: left;
+                text-align: center;
+            }
+
+            
+            h4{
+                box-sizing:border-box;
+                max-width: 720px;
+                font-family: 'Space Grotesk','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 28px;
+                font-weight: 300;
+                color: #222222;
+                padding: 0%;
+                margin-bottom: 2.5%;
+            }
+
+            p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                color: #222222;
+                padding: 0%;
+                margin: 0%;
+                line-height: 1.8;
+            }
+
+            li{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                color: #222222;
+                padding: 0%;
+                margin: 0% 0% 0% 5%;
+                line-height: 1.8;  
+            }
+
+            .paragraph_limits{
+                padding: 0% 20% 5% 20%;
+                text-align: center;
+            }
+
+            .paragraph_limits2{
+                padding: 0% 25%;
+                text-align: center;
+            }
+
+            #text_button{
+                box-sizing: border-box;
+                width: fit-content;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                color: #222222;
+                padding: 0%;
+                margin: 0%;
+            }
+
+            #text_button:hover{
+                color: #444444;
+            }
+
+            .projects{
+                box-sizing: border-box;
+                width: 80vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items:center;
+                text-align: center;
+                margin: 0%;
+                padding: 2.5% 0% 0% 0%;
+            }
+            
+            .project{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                justify-content: flex-start;
+                gap: 5%;
+                align-items: top;
+                margin: 0% 0% 5% 5%;
+                padding: 0%;
+            }
+
+            #no_bottom{
+                margin-bottom: 0%;
+                padding-bottom: 0%;
+            }
+
+            .mockup{
+                box-sizing: border-box;
+                width: 120%;
+                display: flex;
+                transition: transform 0.3s;
+                background-image: url(../Images/challenges-immers.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                aspect-ratio: 1.5;
+                object-position: center;
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .mockup1{
+                box-sizing: border-box;
+                width: 120%;
+                display: flex;
+                transition: transform 0.3s;
+                background-image: url(../Images/immers.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                aspect-ratio: 1.5;
+                object-position: center;
+                margin: 0%;
+                padding: 0%;
+            }
+            
+
+            .mockup:hover, .mockup1:hover{
+                transform: scale(1.02);
+            }
+
+            .project_card{
+                max-width: 90%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+                padding: 0% 0% 0% 1.25%;                   
+            }
+            
+
+            .paragraph_limits3{
+                    box-sizing: border-box;
+                    max-width: 110%;
+                    margin-top: 2.5%;
+
+
+                }
+            
+                .label_text{
+                color: #999999;
+                font-size: medium;
+                margin-bottom: 2.5%;
+            }
+
+            .text_button2{
+                box-sizing: border-box;
+                width: fit-content;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #222222;
+                padding: 0%;
+                margin-top: 5%;
+            }
+
+            .pattern2{
+                box-sizing: border-box;
+                width: 80vw;
+                height:fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content:flex-start;
+                align-items: center;
+                margin: 0%;
+            }
+
+            .pattern_2{
+                box-sizing: border-box;
+                width: 120%;
+                height: fit-content;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: left;
+                gap:2%;
+                margin: 2.5% 0% 2.5% 7.5%;
+            }
+
+            .pattern_2_card{
+                box-sizing: border-box;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                text-align: left;
+                background-color: #eeeeee;
+                padding: 2.5%;
+                margin: 1.5% 0.5%;
+            }
+            
+            .pattern_3_1_card{
+                box-sizing: border-box;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: left;
+                text-align: left;
+                background-color: transparent;
+                padding: 0%;
+                margin: 1.5% 0% 1.5% 5%;
+            }
+
+            .pattern_3_2_card{
+                box-sizing: border-box;
+                width: 31.25%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: left;
+                text-align: left;
+                background-color: #eeeeee;
+                padding: 1.5% 2.5%;
+                margin: 0%;
+            }
+
+            .pattern_3_1_card p{
+            margin-bottom: 5%;
+            }
+
+            .pattern_3_2_card section{
+            margin-bottom: 7.5%;
+            }
+
+            .pattern_2_card h4{
+                box-sizing: border-box;
+                margin-bottom: 2.5%;
+
+            }
+
+           .pattern_2_card p{
+                 margin-top: 2.5%;
+            }
+
+            .pattern_2_card img{
+                box-sizing: border-box;
+                width: fit-content;
+                margin-bottom: 10%;
+            }
+
+
+            .pattern_3{
+                box-sizing: border-box;
+                width: 90%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;               
+                align-items: flex-start;
+                align-self: center;
+                text-align: center;
+                margin: 2.5% 0% 0% 5%; 
+                padding-left: 7.5%;
+            }
+
+            .image_text{
+                box-sizing: border-box;
+                min-width: 30%;
+                max-width: 360px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2.5%;
+                justify-content: space-between;
+            }
+
+            .image_text img{
+                box-sizing: border-box;
+                width: fit-content;
+                height: 60vh;
+                display: flex;
+                flex-direction: column;
+                margin: 5% 0% 5% 0%;
+            }
+
+            .image_text h4{
+                box-sizing: border-box;
+                margin: 0% 0% 5% 0%;
+                text-align: left;
+            }
+
+            .image_text p{
+                box-sizing: border-box;
+                width: 80%;
+                text-align: left;
+            }
+
+            footer{
+                background-color: #222222;
+                width: 109%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 5% 0% 5% 0%;
+                align-items: center;
+                margin-top: 10%;
+                border-right: #222222 solid 10px;
+                text-align: center;
+            }
+            
+            footer h2{
+                color: white;
+            }
+
+            footer p{
+                color: white;
+            }
+
+            #footer_social_item{
+                box-sizing: border-box;
+                width: auto;
+                height: auto;
+                display: flex;
+                gap: 32px;
+                align-items:center;
+                margin-top: 5%;
+            }
+
+            @media screen and (max-width:1200px) and (min-width:900px){
+
+            h1{
+                font-size: 48px;
+            }
+                
+                .mockup, .mockup1{
+                    box-sizing: border-box;
+                    width: 150%;
+                }
+
+
+                #hamburger{
+                    display: none;
+                }
+                
+                #dropdown_items{
+                    display: none;
+                }
+            }
+
+            
+
+            @media screen and (max-width:900px)
+            {
+                body{
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0%;
+                margin: 0%;
+                background-color: #fcfcfc;
+                }
+
+
+                header{
+                box-sizing: border-box;
+                width: 100%;
+                height: 75vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0% 0% 5% 0%;
+                padding: 0%;
+                }
+
+                #hero{
+                box-sizing: border-box;
+                width: 92.5%;
+                height: 90%;
+                position: relative;
+                top: 15%;
+                left: 2.5%;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: flex-end;
+                justify-content: center;
+                padding: 0%;
+                margin: 0%;
+                gap: 2.5%;
+            }
+            
+                
+                #hero_text{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: center;
+                margin: 0% 2.5% 0% 2.5%;
+                padding: 0% 0% 0% 0%;
+                }
+
+                #hero_text2{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: center;
+                margin: 10% 2.5% 0% 2.5%;
+                padding: 0% 0% 0% 0%;
+                }
+
+                #hero_text p{
+                padding: 0% 5% 5% 5%;
+                }
+
+                nav{
+                width: 100%;
+                padding: 0% 7.5%;
+                box-shadow: 1px 1px #f5f5f5;
+                background-color: #fbfbfb;
+                }
+                
+                h1{
+                padding: 0% 5% 7.5% 5%;
+                }
+
+                #social_item, #link_item{
+                display: none;
+                }
+            
+                #hamburger{
+                display: flex;
+                align-self: center;
+               }
+
+               #dropdown_items{
+                box-sizing: border-box;
+                width: 200px;
+                height: 100vh;
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 5%;
+                align-items: right;
+                padding: 2% 2.5% 0.5% 3%;
+                background-color: #eeeeee;
+            }
+
+                #dropdown_items a p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #222222;
+                }
+
+                .nav_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    height: 44px;
+                    text-align: left;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 0%;
+                    margin: 0%;
+                    background-color: #eeeeee;
+                    text-decoration: none;
+                }
+
+                .social_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    height: 44px;
+                    text-align: left;
+                    align-items: center;
+                    padding: 0%;
+                    margin: 0%;
+                    justify-content: flex-end;
+                    gap: 10%;
+                    text-decoration: none;
+                }
+
+                .nav_links2:hover{
+                    background-color: #999999;
+                }
+
+                .social_links2:hover{
+                    background-color: #999999;
+                }
+
+                #cancel_icon{
+                display: flex;
+                justify-content: flex-end;
+                box-sizing: border-box;
+                text-decoration: none;
+                padding: 5% 0% 5% 0%;
+                }
+
+                #logo_new{
+                display: none;
+
+            }
+            
+            #logo_new p{
+                text-decoration: none;
+                color: #222222;
+
+            }
+
+                .paragraph_limits{
+                padding: 0% 20%;
+                margin-bottom: 5%;
+                text-align: center;
+                align-self: center;
+                }
+
+                .paragraph_limits2{
+                padding: 0% 20%;
+                margin-bottom: 5%;
+                text-align: center;
+                align-self: center;
+                }
+
+                .paragraph_limits3{
+                    box-sizing: border-box;
+                    width: 85%;
+                }
+
+                .projects{
+                box-sizing: border-box;
+                width: 90vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items:center;
+                text-align: center;
+                margin: 0%;
+                padding: 2.5% 0% 0% 0%;
+                align-self: center;
+            }
+                
+                .project{
+                box-sizing: border-box;
+                width:100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 7.5% 0% 7.5% 0%;
+                padding: 0%;
+            }
+
+
+            .project_card{
+                padding: 0%;
+                margin: 5% 5% 0% 5%;                  
+            }
+
+            #title_section{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items:center;
+                margin: 0%;
+                gap: 5%;
+                padding: 5% 0% 0% 0%;
+            }
+            
+            #title_section h2{
+                box-sizing: border-box;
+                align-items:center;
+                text-align: center;
+            }
+
+            #title_section p{
+                box-sizing: border-box;
+                align-self:center;
+                text-align: center;
+            }
+            
+            .label_text{
+                margin-bottom: 5%;
+            }
+
+            #text_button{
+                box-sizing: border-box;
+                width: fit-content;
+            }
+            
+            .text_button2{
+                box-sizing: border-box;
+                width: fit-content;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #222222;
+                padding: 0%;
+                margin-top: 2.5%;
+            }
+
+            .pattern_2_card{
+                box-sizing: border-box;
+                width: 70%;
+            }
+
+            .pattern_3_1_card{
+                box-sizing: border-box;
+                width: 80%;
+            }
+
+            .pattern_3_2_card{
+                box-sizing: border-box;
+                width: 80%;
+                flex-direction: column;
+                gap: 5%;
+            }
+
+            .pattern_3_1_card p{
+            margin-bottom: 7.5%;
+            }
+
+            .pattern_3_2_card section{
+            margin-bottom: 7.5%;
+            }
+
+            h4{
+                font-family: 'Space Grotesk','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 28px;
+                font-weight: 300;
+                color: #222222;
+                padding: 0%;
+                margin-bottom: 2.5%;
+            }
+
+            p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                color: #222222;
+                padding: 0%;
+                margin: 0%;
+                line-height: 1.8;
+            }
+   
+
+            .mockup:hover, .mockup1:hover{
+                transform: scale(1.02);
+            }
+
+            }
+
+            @media screen and (max-width:660px){
+            header{
+                box-sizing: border-box;
+                height: 75vh;
+                margin-bottom: 5%;
+            }
+
+            #hero{
+                box-sizing: border-box;
+                width: 60%;
+                height: 90%;
+                position: relative;
+                top: 15%;
+                left: 2.5%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                justify-content: center;
+                padding: 0%;
+                margin: 0%;
+                gap: 2.5%;
+            }
+
+            h1{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 48px;
+                font-weight: 500;
+                padding: 0% 5% 7.5% 5%;
+                }
+
+            .paragraph_limits3{
+                box-sizing: border-box;
+                width: 100%;
+                }
+
+            .paragraph_limits{
+                padding: 0% 10%;
+                text-align: center;
+            }
+
+            .paragraph_limits2{
+                padding: 0% 10%;
+                text-align: center;
+            }
+
+                h2{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:40px;
+                font-weight: 600;
+                color: #222222;
+            }
+
+            #hero_text{
+                padding-bottom: 0%;
+            }
+
+            #hero_text2{
+                padding-bottom: 0%;
+                margin-top: 20%;
+            }
+
+            #title_section{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items:center;
+                margin: 0%;
+                gap: 5%;
+                padding: 5% 0% 0% 0%;
+            }
+            
+            #title_section h2{
+                box-sizing: border-box;
+                align-items:center;
+                text-align: center;
+            }
+
+            #title_section p{
+                box-sizing: border-box;
+                align-self:center;
+                text-align: center;
+                padding: 0% 5%;
+            }
+            
+            .project{
+                    padding-bottom: 7.5%;
+                }
+
+            .projects{
+                    padding-top: 2.5%;
+                }
+
+            .pattern_2_card{
+                box-sizing: border-box;
+                width: 90%;
+                height: fit-content;
+                padding: 10%;
+            }
+
+            #dropdown_items{
+                box-sizing: border-box;
+                width: 160px;
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 5%;
+                align-items: right;
+                padding: 3% 2.5% 0.5% 5%;
+                background-color: #eeeeee;
+            }
+
+                #dropdown_items a p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #222222;
+                }
+
+
+
+                .nav_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    height: 44px;
+                    text-align: left;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 0%;
+                    margin: 0%;
+                    background-color: #eeeeee;
+                    text-decoration: none;
+                }
+
+                .social_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    height: 44px;
+                    text-align: left;
+                    align-items: center;
+                    padding: 0%;
+                    margin: 0%;
+                    justify-content: flex-end;
+                    gap: 10%;
+                    text-decoration: none;
+                }
+
+                .nav_links2:hover{
+                    background-color: #999999;
+                }
+
+                .social_links2:hover{
+                    background-color: #999999;
+                }
+
+                #cancel_icon{
+                display: flex;
+                justify-content: flex-end;
+                box-sizing: border-box;
+                padding: 7.5% 0;
+
+            }
+                #logo_new{
+                box-sizing: border-box;
+                display: none;
+                }
+
+                footer p{
+                padding: 0% 10%;
+            }
+
+            }
+
+            @media screen and (max-width:396px){
+                #dropdown_items{
+                box-sizing: border-box;
+                width: 100%;
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                top: 0%;
+                right: 0%;
+                align-self: center;
+                align-items: right;
+                margin-left: 5%;
+                background-color: #eeeeee;
+                padding: 5% 7.5% 5% 7.5%;
+            }
+
+                #dropdown_items a p{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #222222;
+                }
+
+                #hero{
+                box-sizing: border-box;
+                width: 60%;
+                height: 90%;
+                position: relative;
+                top: 15%;
+                left: 2.5%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                justify-content: center;
+                padding: 0%;
+                margin: 0%;
+                gap: 15%;
+            }
+
+                .nav_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                    text-decoration: none;
+                }
+
+                .social_links2{
+                    box-sizing: border-box;
+                    display: flex;
+                }
+
+                .nav_links2:hover{
+                    background-color: #999999;
+                }
+
+                .social_links2:hover{
+                    background-color: #999999;
+                }
+
+                #cancel_icon{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-self: flex-end;
+                box-sizing: border-box;
+                background-color: #eeeeee;
+                padding: 5% 0%;
+            }
+
+
+                #logo_new{
+                box-sizing: border-box;
+                display: none;
+                }
+
+
+            h1{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 40px;
+                font-weight: 500;
+                width: 85vw;
+                padding: 0% 0% 7.5% 7.5%;
+                text-align: left;
+                align-self: left;
+                }
+
+                #hero_text p{
+                align-self: left;
+                text-align: left;
+                padding: 0% 5% 5% 10%;
+                }
+
+                #hero_text2{
+                box-sizing: border-box;
+                width: 125vw;
+                position: relative;
+                left: 5vw;
+                display: flex;
+                flex-direction: column;
+                margin: 5% 0% 0% 0%;
+                align-self: center;
+                padding: 10% 0% 10% 5%;
+            }
+
+            #hero_text2 p{
+                box-sizing: border-box;
+                width: 95vw;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 10%;
+            }
+
+            #hero_text2 h1{
+                box-sizing: border-box;
+                width: 95vw;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 0%;
+            }
+
+            #hero_text2 h4{
+                box-sizing: border-box;
+                width: 95vw;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 10%;
+            }
+
+                .projects{
+                    padding-top: 10%;
+                }
+
+                .project{
+                    padding-bottom: 10%;
+                }
+                
+                .paragraph_limits3{
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+
+                h2{
+                font-family: 'Space Grotesk', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:28px;
+                font-weight: 600;
+                color: #222222;
+                }
+
+                #title_section{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0%;
+                gap: 5%;
+                padding: 5% 0% 0% 0%;
+            }
+            
+            #title_section h2{
+                box-sizing: border-box;
+                align-items: center;
+                text-align: center;
+            }
+
+            #title_section p{
+                box-sizing: border-box;
+                align-self:center;
+                text-align: center;
+            }
+
+                .paragraph_limits{
+                padding: 0% 1.25%;
+                margin-bottom: 5%;
+                text-align: center;
+                align-self: center;
+                }
+
+                .paragraph_limits2{
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0% 1.25%;
+                margin-bottom: 5%;
+                text-align: center;
+                align-self: center;
+                }
+
+                .paragraph_limits3{
+                box-sizing: border-box;
+                width: 200%;
+                padding: 0% 0.5% 0% 0%;
+                }
+
+                #hero_text{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                margin: 10% 2.5% 0% 2.5%;
+                padding: 0%;
+                }
+
+                .project_card{
+                width: 100%;
+                padding: 0%;
+                margin: 5% 0.5% 0% 1.25%;                  
+                }
+
+                .pattern_2_card{
+                box-sizing: border-box;
+                width: 100%;
+                height: fit-content;
+                padding: 7.5%;
+            }
+
+                #text_button{
+                    box-sizing: border-box;
+                    width: fit-content;
+                }
+
+                footer{
+                    box-sizing: border-box;
+                width: 125vw;
+                position: relative;
+                left: 5vw;
+                background-color: #222222;
+                display: flex;
+                flex-direction: column;
+                margin: 5% 0% 0% 0%;
+                align-self: center;
+                padding: 10% 0% 10% 7.5%;
+                }
+            }
+
+        </style>
+            
+        <script>
+            function g(){cancel_icon.parentElement.style.display=""
+            hamburger.style.display=""}
+            
+            function f(){cancel_icon.parentElement.style.display="flex"
+            hamburger.style.display="none"}
+
+        </script>
+
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                    <section id="logo"><a href="https://samuelakigbogun.github.io/portfolio-landing-page">Claire Igwe</a></section>
+                    
+                    <section id="link_item">
+                        <a href="https://samuelakigbogun.github.io/portfolio-landing-page" class="nav_links">Work</a>
+                        <a href="#" class="nav_links">Bio</a>
+                        <a href="https://www.behance.net/claireigwe2" class="nav_links">Gallery</a>
+                        <a href="#" class="nav_links">Blog</a>
+                    </section>
+
+                    <section id="social_item">
+                        <a href="mailto:contact@claireigwe.com" class="social_links"><img src="../Images/mail.png" alt="Email Icon"></a>
+                        <a href="https://www.behance.net/claireigwe2" class="social_links"><img src="../Images/behance.png" alt="Behance Icon"></a>
+                        <a href="https://www.linkedin.com/in/claire-igwe" class="social_links"><img src="../Images/linkedin.png" alt="LinkedIn Icon"></a>
+                        <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter.png" alt="Twitter Icon"></a>
+                    </section>
+
+                    <section id="hamburger" onclick="f()">
+                        <a href="#" class="social_links"><img src="../Images/hamburger.png" alt="Icon"></a>
+                    </section>
+                    
+                    <section id="dropdown_items">
+                        <a href="https://samuelakigbogun.github.io/portfolio-landing-page" id="cancel_icon" onclick="g()"><p id="logo_new">Claire Igwe</p><img src="../Images/close_icon.png" alt="Icon"></a>
+                        <p class="label_text">Go To</p>
+                        <a href="#" class="nav_links2"><p>Work</p></a>
+                        <a href="#" class="nav_links2"><p>Bio</p></a>
+                        <a href="https://www.behance.net/claireigwe2" class="nav_links2"><p>Gallery</p></a>
+                        <a href="#" class="nav_links">Blog</a>
+                        <hr><hr>
+                        <p class="label_text">Reach Out</p>
+                        <a href="mailto:contact@claireigwe.com" class="social_links2"><p>Email</p><img src="../Images/mail.png" alt="Email Icon"></a>
+                        <a href="https://www.behance.net/claireigwe2" class="social_links2"><p>Behance</p><img src="../Images/behance.png" alt="Behance Icon"></a>
+                        <a href="https://www.linkedin.com/in/claire-igwe" class="social_links2"><p>LinkedIn</p><img src="../Images/linkedin.png" alt="LinkedIn Icon"></a>
+                        <a href="https://www.twitter.com/claire_uxdesign" class="social_links2"><p>Twitter</p><img src="../Images/twitter.png" alt="Twitter Icon"></a>
+                    </section>
+                
+            </nav>
+
+
+            <section id="hero">    
+                <img src="../Images/immers_logo.png" alt="Immers Logo">
+            </section>
+                
+        </header>
+
+        
+        <section id="hero_text">
+            <h1>Try out cloths from anywhere on a VR Store, Immers</h1>
+            <p class="paragraph_limits2">With Immers, what you order is always what you get. Fashion shoppers can virtually try out cloths from their favorite stores, anywhere and anytime</p>
+        </section>
+        
+        <section id="projects">
+
+            <section id="title_section3">
+                <h2>Product Overview</h2>
+            </section>
+
+            <section class="project">
+
+                <section class="pattern_3_1_card">
+                    <h4>Design Challenge</h4>
+                    <p>Online fashion shoppers always worry whether the cloths they order from online stores would actually fit them. It was always safer to just walk into a physical store to try out cloths. But this meant more stress for fashion shoppers and a real problem for online fashion retailers.</p>
+                    <h4>Design Solution</h4>
+                    <p>We combined insights from fashion shoppers and vendors to build Immers - an easy-to-use virtual fashion store with life-sized 3d model/mannequin of shoppers who wanted to try out cloths from their favorite stores online</p>
+                </section>
+
+                <section class="pattern_3_2_card">
+                
+                    <section>
+                        <h4>Role</h4>
+                        <p>Product Design Intern</p>
+                    </section>
+
+                    <section>
+                        <h4>Industry</h4>
+                        <p>Fashion Retail<br>Virtual Reality and Web 3</p>
+                    </section>
+
+                    <section>
+                        <h4>Tools</h4>
+                        <p>Figma • Miro</p>
+                    </section>
+
+                    <section>
+                        <h4>Deliverables</h4>
+                        <p>High-Fidelity Wireframes</p>
+                    </section>
+
+                </section>
+
+            </section>
+        </section>
+
+        <section class="projects">
+
+            <section id="title_section">
+                <h2>The Challenge</h2>
+                <p>Why Immers?</p>
+            </section>
+            <section class="project">        
+                <section class="mockup">
+                    <!--<a href="#"><img src="../Images/houseafrica.png" alt="Project 2 Mockup"></a>-->
+                </section>
+                <section class="project_card">
+                    
+                    <h4>Size and color labels can be both confusing and misleading.</h4>
+                    <p class="paragraph_limits3">And both shoppers and online retailers hate it when cloths get sent back. The alternatives were too costly and inconvenient</p>  
+                    <ul>
+                        <li class="paragraph_limits3">Send cloths to shopper for test</li>  
+                        <li class="paragraph_limits3">Open physical stores near every shopper</li>                                
+                    </ul>                    
+                </section>                             
+            </section>
+        
+        </section>
+        
+        <section class="projects">
+
+            <section id="title_section">
+                <h2>The Solution</h2>
+                <p>Virtual Reality Fashion Store for Trying Out Cloths Online</p>
+            </section>
+
+            <section class="project">        
+                <section class="mockup1">
+                    <!--<a href="#"><img src="../Images/houseafrica.png" alt="Project 2 Mockup"></a>-->
+                </section>
+                <section class="project_card">
+                    <h4>Design for Dashboard</h4>
+                    <p class="paragraph_limits3">Beyond the financial penalties, businesses also risk criminal prosecution and the irredeemable loss of reputation from missed compliance deadlines</p>                                
+                </section>                          
+            </section>
+        </section>
+
+        <section class="pattern2">
+            <section id="title_section2">
+                <h2>Design Thinking</h2>
+                <p>The thoughts and science that went into Immers, in brief</p>
+            </section>
+    
+            <section class="pattern_2">
+                <section class="pattern_2_card">
+                    <img src="../Images/favorite.png" alt="Empathy is finding out why shoppers return clothes to online retail stores">
+                    <h4>Empathize</h4>
+                    <p>Our research noted the struggles of retailers with online shoppers returning cloths that don't fit. Trying cloths physicaly had become inconvenient</p>
+                </section>
+    
+                <section class="pattern_2_card">
+                    <img src="../Images/psychology.png" alt="The idea is to build a virtual reality store where shoppers virtually try out cloths before buying them">
+                    <h4>Ideate</h4>
+                    <p>Our brainstorming sessions proposed a VR mobile app that allowed shoppers to try out cloths remotely using mannequins modeled from a full-body scan</p>
+                </section>
+        
+                <section class="pattern_2_card">
+                    <img src="../Images/build.png" alt="PrototyPing means building wireframes for a mobile app that meets users needs">
+                    <h4>Prototype</h4>
+                    <p>We created high-fidelity wireframes for a mobile VR store app with screens for body scan, finding cloths, trying out cloths, check-outs, and Sign Up/Sign In </p>
+                </section>
+
+                <section class="pattern_2_card">
+                    <img src="../Images/science.png" alt="Testing means optimizing user experience">
+                    <h4>Test</h4>
+                    <p>With a high-fidelity prototype, we evaluated our product's effectiveness and ease of use with respect to design heuristic principles</p>
+                </section>
+
+            </section>
+                
+        </section>
+
+        <section id="projects">
+
+            <section id="title_section3">
+                <h2>The Process: UX Research</h2>
+                <p>The Product Designer's Process from Drawing Insights</p>
+            </section>
+
+            <section class="project">
+
+                <section class="pattern_3_1_card">
+                    <h4>UX Research Method</h4>
+                    <p>The UI/UX design for Immers used insights from open-ended interview and surveys involving young online fashion shoppers. It also included a competitor analysis of online fashion retail applicatons</p>
+                    <h4>Pain Points</h4>
+                    <p>Fashion shoppers feel misled when cloths they order don't fit, despite the size and color labels. Online retailers cannot afford having cloths returned. But they cannot afford getting cloths to shoppers for testing</p>
+                </section>
+
+                <section class="pattern_3_2_card">
+                
+                    <section>
+                        <h4>Participants</h4>
+                        <p>18 Young Tech-Savvy Online Fashion Shopper</p>
+                    </section>
+
+                    <section>
+                        <h4>Competitors</h4>
+                        <p>Nike<br>Warby Parker<br>Sephora</p>
+                    </section>
+
+                    <section>
+                        <h4>Trade-Off</h4>
+                        <p>Few Respondents</p>
+                    </section>
+
+                </section>
+
+            </section>
+        </section>
+
+        <section class="pattern2" style="width: 110%; padding: 0%;">
+            <section id="title_section2">
+                <h2>Low-Fidelity Wireframes</h2>
+                <p>Building the Layout for the VR Fashion Store, Immers</p>
+            </section>
+
+            <section class="pattern_3">
+                <section class="image_text">    
+                    <img src="../Images/immers_logo.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/Onboarding.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/Sign Up.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/Login.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/Home page.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>-->   
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/Create Personaity.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/Create personality.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+            </section>
+            
+        </section>
+        
+        <section class="pattern2" style="width: 110%; padding: 0%;">
+            <section id="title_section2">
+                <h2>High-Fidelity Wireframes</h2>
+                <p>Designing High-Fidelity Wireframes for Immers</p>
+            </section>
+
+            <section class="pattern_3">
+                <section class="image_text">    
+                    <img src="../Images/sportwear-high.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/create_personality.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/personality_scan_high.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>-->   
+                </section>
+
+                <section class="image_text">    
+                    <img src="../Images/summary_page_high.png" alt="Email Icon">
+                    <!--<h4>Title Title Go</h4>
+                    <p>Some texts go here but its nothing major really. Just add something here</p>--> 
+                </section>
+            </section>
+            
+        </section>
+
+        <section id="hero_text2">
+            <h4>What I learnt from Designing Immers</h4>
+            <h1>Love Auto Layouts and Atomic Designs</h1>
+            <p class="paragraph_limits2">Immers was my exciting first rodeo designing a VR product. I fell in love with the auto-layout feature on Figma, and bossed it!</p>
+        </section>
+        
+        <footer>
+            <h2>Let's Work Together</h2>
+            <p>I can't wait to share your vision of a digital product</p>
+            <section id="footer_social_item">
+                        <a href="mailto:contact@claireigwe.com" class="social_links"><img src="../Images/mail-white.png" alt="Email Icon"></a>
+                        <a href="https://www.behance.net/claireigwe2" class="social_links"><img src="../Images/behance-white.png" alt="Behance Icon"></a>
+                        <a href="https://www.linkedin.com/in/claire-igwe" class="social_links"><img src="../Images/linkedin-white.png" alt="LinkedIn Icon"></a>
+                        <a href="https://www.twitter.com/claire_uxdesign" class="social_links"><img src="../Images/twitter-white.png" alt="Twitter Icon"></a>
+            </section>
+        </footer>
+    
+    </body>
+</html>

@@ -1,0 +1,1034 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+ 
+
+  img{ 
+  object-fit: contain;
+  }
+  *{ 
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  }
+  a{ 
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   white-space: nowrap;
+   font-size: 16px;
+   font-family: 'Nunito', sans-serif;
+  }
+  .logo-weight{
+    font-family: 'Courier New', serif;
+  }
+  li{ 
+  list-style: none;
+  }
+  ul{ 
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  }
+  .grid_centered_text{ 
+  position: absolute;
+   white-space: nowrap;
+   left: 0px;
+   top: 275px;
+   font-size: 1.5rem;
+   width: 100%;
+   text-align: center;
+   font-family: 'Nunito Sans', sans-serif;
+  }
+  .blue_button{ 
+   background-color: rgb(25, 118, 210);
+   color: rgb(255, 255, 255);
+   border: 1px solid rgb(25, 118, 210);
+   font-family: 'Nunito', sans-serif;
+   font-size: 16px;
+   
+  }
+  .footer-sm{ 
+   display: flex;
+   justify-content: flex-start;
+   width: 100%;
+   height: 11%;
+   white-space: nowrap;
+   font-size: 16px;
+   font-family: 'Nunito', sans-serif;
+  }
+  .footer-bi{ 
+  display: flex;
+   justify-content: flex-start;
+   width: 100%;
+   height: 100px;
+   align-items: center;
+   padding-top: 17px;
+   color: rgb(255, 255, 255);
+   white-space: nowrap;
+   font-size: 18px;
+   font-family: 'Nunito', sans-serif;
+   font-weight: 700;
+  }
+  #image_grid3colsec{ 
+  display: flex;
+   justify-content: center;
+   width: 100vw;
+   background-color: #ffffff;
+  }
+  .inner_image_grid3col{ 
+  margin: 1.1em;
+   flex: 1 1 0%;
+   display: flex;
+   justify-content: center;
+   background-color: #ffffff;
+  }
+  .semi_image_grid3col{ 
+  position: absolute;
+   width: 100%;
+   height: 100%;
+   aspect-ratio: 1 / 1;
+   display: flex;
+   justify-content: center;
+   background-color: #ffffff;
+  }
+  .outer_image_grid3col{ 
+   position: relative;
+  }
+  .label_grid3col{ 
+  font-size: 1.35rem;
+  }
+  .outer_image_grid2col{ 
+  position: relative;
+   background-color: #fcfcfc;
+  }
+  .souter_image_grid2col{ 
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+   .souter_image_grid2colb{ 
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  background-color: #DAE9ED;
+}
+   .semi_image_grid2col{ 
+   display: flex;
+   justify-content: center;
+   width: 75%;
+   height: 70%;
+   flex-direction: column;
+  }
+   .image_grid2col{ 
+   width: 65%;
+  height: 60%;
+  margin-top: -0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .inner_image_grid2col{ 
+   display: flex;
+   align-items: center;
+   align-self: center;
+   flex-direction: column;
+   flex: 1.1 1 0%;
+   width: 40%;
+   justify-content: space-around;
+  }
+  .label_grid2col{ 
+  display: flex;
+   justify-content: space-between;
+   font-size: 1.5rem;
+   margin-top: -0.2em;
+   font-family: 'Nunito Sans', sans-serif;
+  }
+  .footerr-sec{ 
+  display: flex;
+   align-items: center;
+   flex-direction: column;
+  }
+  .inner_sec_grid2col{ 
+   flex: 0.6 1 0%;
+  }
+  .sec_grid2col{ 
+   text-align: center;
+   color: rgb(64, 64, 64);
+   line-height: 1.6;
+   word-spacing: 2px;
+   margin-top: 0.6em;
+   font-family: 'Nunito', sans-serif;
+   font-size: 16px;
+  }
+  .inputs[name=Name]{ 
+  margin-top: 0.2em;
+  }
+  .inputs{ 
+  height: 59px;
+  padding-left: 1.4em;
+  outline: transparent solid 1px;
+  }
+  .inputs::placeholder{ 
+   font-size: 1rem;
+  }
+  summary::after{ 
+   content: "";
+  }
+  #nav-container☆,#navnownav-container☆{ 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 10px;
+   height: 40px;
+  }
+  #nav-container☆{ 
+  width: 86vw;
+  }
+  #navnownav-container☆{ 
+  width: 91vw;
+  }
+  #nav☆,#navnownav☆{ 
+  display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 23px;
+  }
+  #navmobile{ 
+  width: 88.5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 0.3em;
+  }
+  #ulinnavmob{ 
+  display: flex;
+   justify-content: space-between;
+   height: 128px;
+  }
+  #nav☆{ 
+  width: 415px;
+  }
+  #parkingpanic,#navnowparkingpanic,#packingmobnav{ 
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 24px;
+   font-weight: 200;
+  }
+
+  #footer-logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 200;
+  }
+
+  #nav-container,#navnownav-container{
+   background: linear-gradient(239.85deg, rgba(34, 34, 34, 0) -9.36%, rgba(34, 34, 34, 0.576) 100.19%, rgb(34, 34, 34) 100.2%);
+  position: fixed;
+   width: 100vw;
+   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1}
+  #nav-container{ 
+   display: flex;
+   height: 80px;
+  }
+  #nav-ul{ 
+   gap: 0.96rem;
+   height: 40px;
+   align-self: center;
+  }
+  #navnownav-container{ 
+  display: none;
+  height: 60px;
+  }
+  .navicon{ 
+   width: 35px;
+   height: 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .zoomhover:hover{ 
+  width: 120%;
+  height: 105%;
+  }
+  .zoomhover{ 
+  width: 100%;
+  }
+  #firstgrid{ 
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(347px, 1fr));
+  gap: 24px;
+   grid-auto-rows: 362px;
+   width: 85.5vw;
+  }
+   #secondgrid{ 
+  display: grid;
+   width: 86vw;
+  grid-auto-rows: 319px;
+   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+   #thirdgrid{ 
+  width: 86vw;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(450px, 1fr));
+   grid-auto-rows: 530px;
+  }
+  .problo{ 
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  }
+  footer{ 
+   width: 100vw;
+   height: auto;
+  display: flex;
+  justify-content: center;
+  color: rgb(211, 216, 216);
+  background-color: rgb(58, 73, 77);
+  flex-direction: row;
+  }
+  #footinnercol{ 
+   width: 82%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  }
+  #footercol{ 
+   width: 86vw;
+  display: flex;
+   justify-content: space-between;
+   padding: 3em 0em;
+  }
+  #packingcol{ 
+  display: none;
+   font-size: 16px;
+   font-family: 'Nunito', sans-serif;
+  }
+   #packingrow{ 
+  display: initial;
+   font-size: 16px;
+   font-family: 'Nunito', sans-serif;
+  }
+  .listguys{ 
+  font-family: 'Nunito', sans-serif;
+   font-size: 14px;
+  }
+  .sumaryguys{ 
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+   font-weight: 700;
+   list-style: none;
+  display: flex;
+   gap: 7px;
+   justify-content: flex-start;
+  }
+  .input-similar{ 
+   height: 209px;
+   width: 468px;
+  display: flex;
+   flex-direction: column;
+  justify-content: space-between;
+  }
+  #bethefirst{ 
+   display: flex;
+  align-items: center;
+   justify-content: flex-start;
+  color: rgb(128, 128, 128);
+  font-family: 'Nunito', sans-serif;
+   width: 402px;
+  font-size: 16px;
+   height: 86px;
+  }
+  #stressingout{ 
+   display: flex;
+   justify-content: flex-start;
+   place-items: flex-start start;
+   font-size: 1.1rem;
+   align-self: flex-start;
+   flex-flow: row nowrap;
+   position: relative;
+   line-height: 1.4;
+   color: rgb(222, 222, 222);
+   width: 500px;
+   font-family: 'Nunito', sans-serif;
+   margin-top: 0.3em;
+  }
+   #travelerslove{ 
+  font-family: 'Nunito Sans', sans-serif;
+   align-self: center;
+   font-size: 2.42rem;
+   width:600px;
+   text-align: center;
+   display: flex;
+   justify-content: flex-start;
+   line-height: 1.9;
+   font-weight: 700;
+   padding-top: 4.8rem;
+   color: rgb(34, 34, 34);
+  }
+  #pickyourdes{ 
+  font-family: 'Nunito', sans-serif;
+   align-self: center;
+   font-size: 2rem;
+   width: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   font-weight: 700;
+   color: rgb(255, 255, 255);
+   align-items: flex-start;
+   padding-top: 1.2em;
+   margin-top: -1.2em;
+  }
+  #ourvision,#comeonboard{ 
+   align-self: center;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   width: 82%;
+   font-family: 'Nunito', sans-serif;
+   margin-top: -0.8em;
+   font-size: 1.1rem;
+  font-weight: 400;
+   color: rgb(161, 174, 182);
+  }
+  #lightwei-container{ 
+   width: 86vw;
+   height: 47.6821%;
+   font-size: 60px;
+   display: flex;
+   align-items: flex-end;
+  }
+  #thirdgridempty{ 
+   height: 4.5em;
+
+  }
+  #footiconconta{ 
+   display: flex;
+   align-items: center;
+   width: 120px;
+   justify-content: space-between;
+   margin: 0.4em 0em 2em 0em;
+   height: 60.04px;
+  }
+  .input-search-promd{ 
+   background-color: transparent;
+   height: 37px;
+   font-size: 16px;
+   border: 0px solid;
+   margin-left: 0.1rem;
+   flex: 1 1 0%;
+   outline: transparent solid 1px;
+   color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  }
+  #input-search-pro{ 
+  width: 207px;
+  }
+  #input-search-promobi{ 
+  width: 45%;
+  }
+  .input-search-promd::placeholder{ 
+  font-size: 16px;
+   color: rgb(255, 255, 255);
+  }
+  #partnerh2{ 
+  font-family: 'Nunito Sans', sans-serif;
+   align-self: center;
+   width: 47%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   font-weight: 700;
+   color: rgb(255, 255, 255);
+   align-items: flex-start;
+   padding-top: 2em;
+   font-size: 2rem;
+  }
+  #nav-signupin-container1{ 
+   display: flex;
+   justify-content: flex-end;
+   width: 43.5%;
+   align-items: center;
+   gap: 15px;
+  }
+  #navnownav-signup-but{ 
+  width: 75px;
+   color: rgb(255, 255, 255);
+   border: rgb(81, 81, 81);
+   background-color: transparent;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+  }
+  #hero-section{ 
+  width: 100vw;
+   height: 755px;
+   display: flex;
+   place-items: center;
+   justify-content: flex-start;
+   line-height: 1.75;
+   gap: 3px;
+   flex-direction: column;
+  }
+  #lightweight{ 
+  line-height: 1.55;
+   width: 670px;
+   color: rgb(255, 255, 255);
+   margin-right: 2px;
+  font-family: 'Nunito Sans', sans-serif;
+   font-size: 3.5rem;
+   padding-top: 0.8rem;
+   word-spacing: 10px;
+   font-weight: 700;
+  }
+  #stressingout-con,#start-but-container{ 
+  width: 85.8vw;
+   display: flex;
+   justify-content: flex-start;
+  }
+  #stressingout-con{ 
+  align-items: flex-start;
+  }
+  #start-but-container{ 
+  height: 80px;
+  align-items: flex-end;
+  }
+  #pickyourdescon{ 
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 75%;
+   gap: 3em;
+  }
+  #ulsu1{ 
+  height: 137px;
+  }
+  #ulsu2{ 
+   height: 237px;
+  }
+  .ulinsummary{ 
+  display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+  align-items: flex-start;
+   margin-top: 20px;
+  }
+  #nav-input-container2{ 
+   display: flex;
+   justify-items: start;
+   justify-content: flex-start;
+   border-bottom: 1px solid rgb(255, 255, 255);
+   width: 50%;
+   background-color: transparent;
+  }
+  .nav-search-container3{ 
+   height: 36px;
+   width: 49px;
+   flex: 0.23 1 0%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  #nav-signup-but,#bluesolo{ 
+   width: 121px;
+   height: 48px;
+  }
+  #mobilesigncont{ 
+  border: rgb(34, 34, 34);
+   height: 126px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   transform: translate(0px, 15px);
+  }
+  .listmargin{ 
+  margin-top: 20px;
+  }
+  #navmenue{ 
+  display:none;
+  }
+  .lisalista{ 
+  box-sizing: border-box;
+  height: 100%;
+   display: flex;
+   align-items: center;
+  }
+  .blackhoverapad{ 
+   width: 170px;
+   padding: 24px 22px 20px;
+   background-color: rgb(32, 33, 36);
+   z-index: 7;
+   position: fixed;
+   top: 80px;
+  }
+  .blackhovera{ 
+   width: 120px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 12.5px 0px;
+  }
+  .hoverblackchild{ 
+   color: rgb(233, 232, 232);
+   font-family: 'Nunito', sans-serif;
+   white-space: nowrap;
+   font-size: 14px;
+   cursor: pointer;
+  }
+  #darkpartner{ 
+  left: 332px;
+   display: none;
+  }
+  #darkproduct{ 
+   left: 231px;
+   display: none;
+  }
+  #darkpartner:hover{ 
+  left: 332px;
+   display: initial;
+  }
+  #darkproduct:hover{ 
+   left: 231px;
+   display: initial;
+  }
+  #producthoverborder:hover{ 
+  border-bottom:2px solid rgb(50, 98, 146);
+  }
+  #partnerhoverborder:hover{ 
+  border-bottom:2px solid rgb(50, 98, 146)}
+  .signin{ 
+  width:121px;
+  height: 48px;
+   color: rgb(255, 255, 255);
+  font-size: 16px;
+   border: 1px solid rgb(255, 255, 255);
+   background-color: transparent;
+  }
+  #expand_more1b,#expand_more1a{ 
+  display: none;
+  }
+  #ourpartners{ 
+  list-style: none;
+   display: flex;
+   gap: 7px;
+   justify-content: flex-start;
+  }
+  #mobilistsection{ 
+  display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   line-height: 0.7;
+   gap: 16px;
+  }
+  #start-shopping{ 
+  width: 134px;
+   height: 55px;
+   color: rgb(255, 255, 255);
+   margin-top: 0.8em;
+  }
+  #pickyoursec{ 
+  height: 241px;
+   width: 100vw;
+   background-color: #3a494d;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: row;
+  }
+  #airplanemodecon1,#airplanemodecon2{ 
+  width: 13%;
+   height: 75%;
+   display: flex;
+  }
+  #pedalbikercon,#airshuttlercon{ 
+  width: 13%;
+   height: 45%;
+  display: flex;
+   justify-content: flex-end;
+   align-items: center;
+  }
+  #pedalbikercon{ 
+  align-self: flex-start;
+  }
+  #airshuttlercon{ 
+  align-self: flex-end;
+  }
+  #airplanemodecon1{ 
+  align-self: flex-start;
+  justify-content: flex-end;
+   align-items: center;
+  }
+  #airplanemodecon2{ 
+  align-self: flex-end;
+   justify-content: center;
+   align-items: flex-end;
+  }
+  #airplanemode1,#airplanemode2,#pedalbiker,#airshuttler{ 
+  width: 90%;
+   height: 100%;
+  }
+  #airplanemode2{ 
+   transform: rotate(180deg);
+  }
+  #heresection{ 
+  height: 215px;
+   align-items: center;
+  }
+  #heresection,#travelerssec,#image_grid2colsec,#keepintouchsec{ 
+  width: 100vw;
+  display: flex;
+   justify-content: center;
+  background-color: #ffffff;
+  }
+  #hereeveryth{ 
+  font-family: 'Nunito Sans', sans-serif;
+  width: 90vw;
+   font-size: 2.42rem;
+   margin-top: 1.5em;
+   color: rgb(35, 35, 35);
+   text-align: center;
+  }
+  #travelerssec{ 
+  height: 286px;
+  }
+  #keepintouch{ 
+  font-size: 2.3rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  }
+  #keepintouchcon{ 
+  height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   align-self: flex-start;
+  }
+  #image_grid2colsec{ 
+  width: 100vw;
+   align-items: flex-start center;
+  }
+  #keepbutton{ 
+  height: 55px;
+  }
+  .hundredperpicguys{ 
+  width:100%;
+  height: 100%;
+  }
+  #packingfooter{ 
+  align-self: flex-end;
+   display: flex;
+   align-items: center;
+   font-family: 'Nunito Sans', sans-serif;
+   color: rgb(255, 255, 255);
+   height: 70px;
+   font-size: 24px;
+  }
+  #cramamillion{ 
+  display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+   width: 80%;
+   line-height: 1.9em;
+  font-family: 'Nunito', sans-serif;
+   margin-top: 0.2em;
+   font-size: 16px;
+  }
+  #footerrightlist{ 
+  flex: 1 1 0%;
+   display: flex;
+   flex-direction: row;
+  }
+  #footerr-sec3{ 
+  width: 24%;
+  margin: 0px 0px 35px 0px;
+  }
+  #footerr-sec2{ 
+  width: 40%;
+  }
+   #footerr-sec0{ 
+  width:35%;
+  }
+  .gridipartnercontclass{ 
+  position: absolute;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   justify-items: center;
+  }
+  #gridtemarea{ 
+  display: grid;
+   width: 60vw;
+   grid-template-areas: 'eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0' 'eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0' 'eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0 eaaaa0' 'eaaa23 eaaa23 eaaa23 eaaa23 eaaa23 eaaa23 eaaa23' 'eaaa23 eaaa23 eaaa23 eaaa23 eaaa23 eaaa23 eaaa23' 'eaaa23 eaaa23 eaaa23 eaaa23 eaaa23 eaaa23 eaaa23' 'eaaa48 eaaa48 eaaa48 eaaa48 eaaa48 eaaa48 eaaa48' 'eaaa48 eaaa48 eaaa48 eaaa48 eaaa48 eaaa48 eaaa48' '. . . . . . .';
+   flex: 1 1 0%;
+  }
+  #gridareapartbut{ 
+  grid-area: eaaa48 / eaaa48 / eaaa48 / eaaa48;
+  }
+  #gridareacome{ 
+  grid-area: eaaa23 / eaaa23 / eaaa23 / eaaa23;
+  }
+   #gridareapartner{ 
+  grid-area: eaaaa0 / eaaaa0 / eaaaa0 / eaaaa0;
+  }
+  .relatives{ 
+  position: relative;
+  }
+  #navmenulistcon{ 
+  display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 2.1em;
+   height: 407px;
+  }
+  #navmenulistconinner{ 
+  display: flex;
+   justify-items: start;
+   justify-content: flex-start;
+   border-bottom: 1px solid rgb(255, 255, 255);
+   width: 86%;
+   background-color: transparent;
+   flex-direction: row;
+  }
+  #partnerwbutton{ 
+  position: absolute;
+   display: inline;
+   height: 52px;
+   width: 139.688px;
+   color: rgb(133, 133, 133);
+   border: 0px solid;
+   background-color: rgb(255, 255, 255);
+   font-size: 16px;
+   font-family: 'Nunito', sans-serif;
+   margin-top: -0.8em;
+  }
+  #partnerwbutcon{ 
+  flex-direction: column;
+   align-items: center;
+  margin-top: 0.4em;
+  }
+  #partnersecmain{ 
+  height: 356px;
+   width: 100vw;
+   background-color: rgb(58, 73, 77);
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: row;
+   margin-top: 0.6em;
+  }
+  #partnerseccon{ 
+  height: 465px;
+   width: 100vw;
+   padding-top: 6.3em;
+   background-color: #ffffff;
+  }
+  }
+  #footerleftlist{ 
+  flex: 1 1 0%;
+  }
+  #gridemptycont{ 
+  height: 696px;
+  }
+  #header-section{
+    height: 878px;
+    width: 100vw;
+    background-size: cover;
+    background-position: right center;
+    background: url("./images/hero-image-1xx.png");
+    animation: infinite emmanuel 16s step-end;
+   }
+/* media guys*/    
+   @keyframes emmanuel{
+     0%{
+       background: url("./images/hero-image-1xx.png");
+       background-size: cover;
+    background-position: right center;
+     }
+     50%{
+       background-image: url("./images/hero-image-1x.png");
+       background-size: cover;
+    background-position: right center;
+     }
+   }
+          @media (max-width:1162px){
+           #secondgrid{
+                 grid-row-gap:2em;
+               }
+          }  
+            @media (max-width:1048px){  
+             .input-similar{height: 209px;
+                    width: 100%;
+                   }
+                   #footercol,#footinnercol{
+               flex-direction:column;
+               }
+               .footerr-sec{
+                   gap:19px;
+                   margin: 0em;
+                   }
+                   footer{
+                 height: auto;
+               }
+                   #footinnercol{
+            margin-left: 0px;
+                     }
+                     #packingrow{display: none;
+               }
+               #packingcol{display: initial;
+               }
+               #footiconconta{
+                   margin: 0em;
+               }
+                 }  
+             @media (max-width:900px) {
+               #nav-container{
+                 display: none;
+               }
+               #header-section{
+    background: url("./images/hero-image-mobile-\(1\).png");
+    animation: infinite emmanuelmob 16s step-end;
+   }
+   @keyframes emmanuelmob{
+     0%{
+       background: url("./images/hero-image-mobile-\(1\).png");
+       background-size: cover;
+       background-repeat: no-repeat;
+    background-position: center center;
+     }
+     50%{
+       background-image: url("./images/hero-image-mobile-\(2\).png");
+       background-size: cover;
+       background-repeat: no-repeat;
+    background-position: center center;
+     }
+   }
+                   #darkpartner,#darkproduct{
+           display: none;
+           }
+               #navnownav-container{
+                 display: flex;
+                 height:67px ;
+               }
+               #navmenue{
+               display:none;
+               position: fixed;
+               color: rgb(255, 255, 255);
+               background-color: rgb(34, 34, 34);
+               align-items: flex-start;
+               justify-content: center;
+               z-index: 5;
+               top:0;
+               left: 0;
+               width: 95vw;
+               overflow: auto;
+               height: 98vh;
+               }
+               #navcloser{
+                 width: 38px;
+                 height: 38px;
+               }
+                  #thirdgrid{
+                     grid-auto-rows: 470px;
+                    }
+
+                    #thirdgridempty{ 
+                      height: 3em;
+                     }
+             }
+             @media (max-width:840px){
+              html{
+             font-size:11.2px ;
+              }
+                  #travelerslove{width: 400px;}
+                  #keepintouchrel{padding-bottom: 5em;}
+
+            }
+
+             
+             @media (max-width:650px) {
+              #thirdgrid{
+                grid-auto-rows: 440px;
+               }
+               #thirdgridempty{ 
+                height: 3em;
+               
+               }
+              
+             }
+             @media (max-width:540px){
+               #secondgrid{
+                 grid-template-columns: repeat(1,1fr);
+               }
+                   #bethefirst{ 
+                   width: 95%; 
+                    }
+                    #thirdgrid{
+                      grid-auto-rows: 380px;
+                     }
+                     #thirdgridempty{ 
+                      height: 0em;
+                     }
+                     #keepintouchrel{padding-bottom: 0em;}
+             }
+
+    
+          
+      
+             @media (max-width:500px){
+               #thirdgrid{
+                 grid-template-columns: repeat(1,1fr);
+               }
+               #thirdgrid{
+                grid-auto-rows: 355px;
+               }
+             }
+           
+             @media (max-width:400px){
+              #stressingout{ 
+                width: 95%;
+              }
+              #pickyourdes,#ourvision{width: auto;}
+              #thirdgrid{
+                    grid-auto-rows: 350px;
+                   }
+            }
+
+             @media (max-width:380px){
+              #firstgrid{
+                grid-template-columns: repeat(1,1fr);
+              }
+              #travelerslove{width: 90%;}
+
+              #thirdgrid{
+                grid-auto-rows: 340px;
+               }
+            }
+
+            @media (max-width:340px){
+              #thirdgrid{
+                grid-auto-rows: 320px;
+               }
+            }
+             @media (max-width:260px){
+             #lightwei-container{margin-top: 100px;}
+           #thirdgrid{
+                     grid-auto-rows: 300px;
+                    }
+             }
+   
+           
+   
+   
+           
